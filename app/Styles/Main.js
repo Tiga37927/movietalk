@@ -3,6 +3,18 @@ import {
 } from 'react-native'
 
 export default styles = {
+  tab: {
+    backgroundColor: 'darkslateblue',
+    height: 60
+  },
+  tabText: {
+    color: '#ffffff',
+    fontSize: 16
+  },
+  selectedTabText: {
+    color: 'rgba(255, 255, 255, 0.8)',
+    fontSize: 16
+  },
   item: {
     flexDirection: 'row',
     borderBottomWidth: 1,
