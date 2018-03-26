@@ -23,10 +23,10 @@ class MovieTalk extends Component {
   }
   render() {
     return (
-      <TabNavigator style={styles.container}>
+      <TabNavigator>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'Featured'}
-          title="Featured"
+          title="推荐电影"
           selectedTitleStyle={{color: "#3496f0"}}
           renderIcon={() => <Icon name="star" size={px2dp(22)} color="#666"/>}
           renderSelectedIcon={() => <Icon name="star" size={px2dp(22)} color="#3496f0"/>}
@@ -36,7 +36,7 @@ class MovieTalk extends Component {
         </TabNavigator.Item>
         <TabNavigator.Item
           selected={this.state.selectedTab === 'US'}
-          title="US"
+          title="北美票房"
           selectedTitleStyle={{color: "#3496f0"}}
           renderIcon={() => <Icon name="navicon" size={px2dp(22)} color="#666"/>}
           renderSelectedIcon={() => <Icon name="navicon" size={px2dp(22)} color="#3496f0"/>}
