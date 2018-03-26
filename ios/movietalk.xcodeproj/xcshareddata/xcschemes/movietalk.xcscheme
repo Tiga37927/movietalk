@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "moivetalk.app"
-               BlueprintName = "moivetalk"
-               ReferencedContainer = "container:moivetalk.xcodeproj">
+               BuildableName = "movietalk.app"
+               BlueprintName = "movietalk"
+               ReferencedContainer = "container:movietalk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "moivetalkTests.xctest"
-               BlueprintName = "moivetalkTests"
-               ReferencedContainer = "container:moivetalk.xcodeproj">
+               BuildableName = "movietalkTests.xctest"
+               BlueprintName = "movietalkTests"
+               ReferencedContainer = "container:movietalk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "moivetalkTests.xctest"
-               BlueprintName = "moivetalkTests"
-               ReferencedContainer = "container:moivetalk.xcodeproj">
+               BuildableName = "movietalkTests.xctest"
+               BlueprintName = "movietalkTests"
+               ReferencedContainer = "container:movietalk.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "moivetalk.app"
-            BlueprintName = "moivetalk"
-            ReferencedContainer = "container:moivetalk.xcodeproj">
+            BuildableName = "movietalk.app"
+            BlueprintName = "movietalk"
+            ReferencedContainer = "container:movietalk.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "moivetalk.app"
-            BlueprintName = "moivetalk"
-            ReferencedContainer = "container:moivetalk.xcodeproj">
+            BuildableName = "movietalk.app"
+            BlueprintName = "movietalk"
+            ReferencedContainer = "container:movietalk.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "moivetalk.app"
-            BlueprintName = "moivetalk"
-            ReferencedContainer = "container:moivetalk.xcodeproj">
+            BuildableName = "movietalk.app"
+            BlueprintName = "movietalk"
+            ReferencedContainer = "container:movietalk.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

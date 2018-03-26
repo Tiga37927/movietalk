@@ -1,4 +1,4 @@
-package com.moivetalk;
+package com.movietalk;
 
 import android.app.Application;
 
