@@ -41,13 +41,18 @@ export default class USBox extends Component {
     }).done()
   }
 
+  showMovieDetail(movie) {
+    const { navigate } = this.props.navigation;
+    navigate('MovieDetail')
+  }
+
   renderMovieList(item) {
     let movie = item.subject
     return (
       <TouchableHighlight 
         underlayColor ="rgba(34,26,38,0.1)" 
         onPress={()=>{  
-          console.log(`《${movie.title}》output`);  
+          this.showMovieDetail(movie)  
         }}
       >
         <View style={styles.item}>
@@ -85,7 +90,7 @@ export default class USBox extends Component {
     return (
       <View style={styles.container}>
         <ListView dataSource={this.state.movies} 
-        renderRow={this.renderMovieList} />
+        renderRow={this.renderMovieList.bind(this)} />
       </View>
     );
   }

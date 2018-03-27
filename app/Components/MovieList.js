@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   Text,
@@ -15,6 +9,7 @@ import {
 } from 'react-native';
 
 import styles from '../Styles/Main'
+import MovieDetail from './MovieDetail'
 
 const REQUEST_URL = 'https://api.douban.com/v2/movie/top250'
 export default class MovieList extends Component {
@@ -41,12 +36,19 @@ export default class MovieList extends Component {
     }).done()
   }
 
+  showMovieDetail(movie) {
+    const { navigate } = this.props.navigation;
+    navigate('MovieDetail', {
+      title: movie.title
+    })
+  }
+
   renderMovieList(movie) {
     return (
       <TouchableHighlight 
         underlayColor ="rgba(34,26,38,0.1)" 
         onPress={()=>{  
-          console.log(`《${movie.title}》output`);  
+          this.showMovieDetail(movie)
         }}
       >
         <View style={styles.item}>
@@ -84,7 +86,7 @@ export default class MovieList extends Component {
     return (
       <View style={styles.container}>
         <ListView dataSource={this.state.movies} 
-        renderRow={this.renderMovieList} />
+        renderRow={this.renderMovieList.bind(this)} />
       </View>
     );
   }

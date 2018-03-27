@@ -46,7 +46,6 @@ export default styles = {
   container: {
     flex: 1,
     backgroundColor: '#eae7ff',
-    paddingTop: 23
   },
   image: {
     width: 99,
