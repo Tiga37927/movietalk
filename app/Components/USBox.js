@@ -4,7 +4,7 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   Text,
   View,
@@ -33,16 +33,22 @@ export default class USBox extends Component {
   }
 
   fetchData() {
-    fetch(REQUEST_URL).then(response => response.json()).then(responseData => {
-      this.setState({
-        movies: this.state.movies.cloneWithRows(responseData.subjects),
-        loaded: true
+    fetch(REQUEST_URL)
+      .then(response => response.json())
+      .then(responseData => {
+        this.setState({
+          movies: this
+            .state
+            .movies
+            .cloneWithRows(responseData.subjects),
+          loaded: true
+        })
       })
-    }).done()
+      .done()
   }
 
   showMovieDetail(movie) {
-    const { navigate } = this.props.navigation;
+    const {navigate} = this.props.navigation;
     navigate('MovieDetail', {
       ...movie
     })
@@ -51,23 +57,27 @@ export default class USBox extends Component {
   renderMovieList(item) {
     let movie = item.subject
     return (
-      <TouchableHighlight 
-        underlayColor ="rgba(34,26,38,0.1)" 
-        onPress={()=>{  
-          this.showMovieDetail(movie)  
-        }}
-      >
+      <TouchableHighlight
+        underlayColor="rgba(34,26,38,0.1)"
+        onPress={() => {
+        this.showMovieDetail(movie)
+      }}>
         <View style={styles.item}>
           <View style={styles.itemImage}>
-            <Image source={{uri: movie.images.large}}
-            style={styles.image}/>
+            <Image
+              source={{
+              uri: movie.images.large
+            }}
+              style={styles.image}/>
           </View>
           <View style={styles.itemContent}>
             <Text style={styles.itemHeader}>
               {movie.title}
             </Text>
             <Text style={styles.itemMeta}>
-              {movie.original_title} ( {movie.year} )
+              {movie.original_title}
+              ( {movie.year}
+              )
             </Text>
             <Text style={styles.redText}>
               {movie.rating.average}
@@ -78,21 +88,22 @@ export default class USBox extends Component {
     )
   }
   render() {
-    if(!this.state.loaded) {
+    if (!this.state.loaded) {
       return (
         <View style={styles.container}>
           <View style={styles.loading}>
-            <ActivityIndicator
-            size="large"
-            color="#6435c9" />
+            <ActivityIndicator size="large" color="#6435c9"/>
           </View>
         </View>
       )
     }
     return (
       <View style={styles.container}>
-        <ListView dataSource={this.state.movies} 
-        renderRow={this.renderMovieList.bind(this)} />
+        <ListView
+          dataSource={this.state.movies}
+          renderRow={this
+          .renderMovieList
+          .bind(this)}/>
       </View>
     );
   }
