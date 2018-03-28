@@ -39,7 +39,7 @@ export default class MovieList extends Component {
   showMovieDetail(movie) {
     const { navigate } = this.props.navigation;
     navigate('MovieDetail', {
-      title: movie.title
+      ...movie
     })
   }
 

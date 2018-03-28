@@ -43,7 +43,9 @@ export default class USBox extends Component {
 
   showMovieDetail(movie) {
     const { navigate } = this.props.navigation;
-    navigate('MovieDetail')
+    navigate('MovieDetail', {
+      ...movie
+    })
   }
 
   renderMovieList(item) {

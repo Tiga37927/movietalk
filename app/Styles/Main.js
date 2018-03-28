@@ -23,6 +23,12 @@ export default styles = {
     paddingTop: 6,
     flex: 1,
   },
+  itemText: {
+    fontSize: 16,
+    fontWeight: '300',
+    color: 'rgba(0, 0, 0, 0.8)',
+    lineHeight: 26
+  },
   itemContent: {
     flex: 1,
     marginLeft: 13,
